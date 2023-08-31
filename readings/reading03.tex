@@ -4,13 +4,32 @@
 \course{Math 7852}
 \date{Week 3: Stiefel-Whitney classes}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
 
 \begin{document}
 \maketitle
 
 From Milnor--Stasheff's \textit{Characteristic Classes}, read
+Chatper~4 which introduces \textbf{Stiefel-Whitney classes} from an
+\textit{axiomatic} perspective.  It won't be until later in this
+course when we actually show that cohomology classes satisfying these
+axioms exist.
+
+In the broadest perspective, Stiefel-Whitney classes are our first
+example of \textbf{characteristic classes}, which are certain
+cohomology classes associated with a vector bundle. These cohomology
+classes quantify how ``twisted'' the vector bundle is; for a trivial
+product, the cohomology classes are trivial. Part of the interest in
+characteristic classes is that they are a common theme tying together
+algebraic topology, algebraic geometry, and differential geometry.
+
+The Stiefel-Whitney classes specifically associate to a bundle
+\( E \to B \) certain classes
+\( w_i \in H^i(B; \mathbb{Z}/2\mathbb{Z}) \). These classes encode
+features we care about: the first Stiefel-Whitney class \( w_1 \) is
+trivial if and only if the bundle is orientable. But be warned: these
+classes aren't complete invariants of bundles. For example, \( TS^2 \)
+is not trivial, but \( TS^2 \) is stably trivial, meaning that
+\( TS^2 \oplus \mathbb{R} \) is a trivial bundle, and the
+Stiefel-Whitney classes vanish for stably trivial bundles.
 
 \end{document}
