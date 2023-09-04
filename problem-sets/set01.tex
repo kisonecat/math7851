@@ -3,40 +3,73 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Bundle and save!
+  \byline{Progressive Insurance}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+What is a \textbf{smooth manifold}?
+\end{problem}
+
+\begin{problem}
+What is a \textbf{vector bundle}?
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  Let $E_n \to S^2$ be the complex line bundle corresponding to the
+  ``clutching construction'' using $z \mapsto z^n$.
+
+  The tensor product $E_n \otimes E_m$ is itself a complex line bundle
+  --- which one is it?
+\end{problem}
+
+\begin{problem}
+  Regarding $S^2$ as $\mathbb{C}P^1$, we can interpret $TS^2$ as a complex line bundle.
+
+  Find $n$ so $TS^2 \cong E_n$.
+\end{problem}
+
+\begin{problem}
+  Consider the complex line bundle $H = E_1$, the \textbf{canonical line bundle} over  $\mathbb{C}P^1$.
+
+  Show that
+  \[
+    (H \otimes H) \oplus \underline{\mathbb{C}} \cong H \oplus H.
+  \]
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Describe a nontrivial line bundle over $S^1$.\label{mobius-bundle}
+\end{problem}
+
+\begin{problem}
+  Consider the bundle $E \to S^1$ from \ref{mobius-bundle}.  Regarding
+  $S^1 \subset \mathbb{C}$, let $f : S^1 \to S^1$ be the doubling map
+  $f(z) = z^2$.
+
+  Is the bundle $f^\star E$ trivial?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
+\textit{You may not have met these PODASIP-style problems before.
+  What follows are statements which may be ``true'' or ``false.''  If
+  the statement is true, you must provide a proof.  If the statement
+  is false, explain why it is false, then fix the statement and
+  finally supply a proof for the repaired statement.}
+
 \begin{problem}
-  Something that may be wrong.
+  The sphere $S^n$ admits a nowhere-vanishing vector field.
 \end{problem}
 
 \end{document}
