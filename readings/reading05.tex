@@ -1,16 +1,38 @@
 \documentclass{homework}
 \input{preamble}
 \author{Jim Fowler}
-\course{Math 7852}
+\course{Math 7851}
 \date{Week 5: Cohomology of Grassmannian}
-
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
 
 \begin{document}
 \maketitle
 
-From Milnor--Stasheff's \textit{Characteristic Classes}, read
+Last week involved a bit of point-set topology (paracompactness!
+normal spaces!) resulting in our identifying bundles over a space $X$
+with maps from $X$ into the Grassmannian.  Moreover, identical bundles
+result in \textit{homotopic} maps.  This means that, given a bundle
+over $X$ and some class $\omega \in H^\star(\mbox{Grassmannian})$, we
+can pull it back to get a well-defined class in $H^\star(X)$.  These
+\textbf{characteristic classes} are exactly what we have been wanting!
+So we had better get started in understanding the cohomology of the
+Grassmannian.
+
+The cohomology of the Grassmannian is exactly what you'll find when
+you read Chapter~6 and Chapter~7 from Milnor--Stasheff's
+\textit{Characteristic Classes}.
+
+Chapter~6 focuses on the cell structure of the Grassmannian and
+introduces the \textbf{Schubert cells}. These cells represent a
+specific decomposition of the Grassmannian with applications outside
+this course. You might already be familiar with \textbf{flags}; the
+Schubert cells are certain subsets of the Grassmannian defined by
+their incidence with a given flag.  The combinatorics of such gadgets
+is important in algebraic geometry.
+
+But for us the main application comes in Chapter~7, where, armed with
+this cell structure, we'll compute the cohomology of the Grassmannian.
+Earlier we had provided just a list of axioms that we hoped the
+Stiefel-Whitney classes would satisfy; now we'll be able to provide
+existence and uniqueness proofs.
 
 \end{document}
