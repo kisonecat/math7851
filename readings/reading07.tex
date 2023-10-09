@@ -2,15 +2,34 @@
 \input{preamble}
 \author{Jim Fowler}
 \course{Math 7852}
-\date{Week 7: Thom Isomorphism}
-
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\date{Week 7: Euler class}
 
 \begin{document}
 \maketitle
 
 From Milnor--Stasheff's \textit{Characteristic Classes}, read
+Chapter~9, ``Oriented bundles and the Euler class.''  This provides a
+segue connecting our $\mathbb{Z}/2\mathbb{Z}$ study to integral
+classes by studying a particular cohomology class with integer
+coefficients, i.e., the Euler class.  For an \textit{oriented}
+rank-$n$ bundle $E$ over $B$, we already have the $n$-th
+Stiefel-Whitney class $w_n \in H^n(B;\mathbb{Z}/2\mathbb{Z})$, and you
+can think of the Euler class as a refinement of this to a class
+$e \in H^n(B;\mathbb{Z})$.  This results in some exciting new
+features: the Stiefel-Whitney classes are stable, meaning that
+$w_i(E) = w_i(E \oplus \mathbb{R})$ where $\mathbb{R}$ denotes a
+trivial line bundle; the Euler class is \textit{unstable}, and indeed
+the Euler class of a bundle with a trivial summand vanishes!  Far from
+ruining the Euler class, this is truly a feature, because it means
+that the Euler class can view unstable phenomena.  For example, the
+Euler class can detect the nontriviality of the tangent bundle $TS^2$
+even though that bundle is stably trivial.
+
+There are some other references which I think you will find helpful
+for this week.  The first is Hatcher's \textit{Vector bundles and
+  K-theory}.  From this, read Chapter~3.2 on the Euler class.  I also
+want to draw your attention to Bott and Tu's \textit{Differential
+  Forms in Algebra Topology} which I think you will find very
+inspiring.
 
 \end{document}
