@@ -3,40 +3,54 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Sheaf theory is the subject in which you do topology horizontally and algebra vertically.
+  \byline{Maurice Auslander}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  Define the \textbf{Chern class} $c_i$.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+For which $n$ is it the case that $\CP^n$ is spin?
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Using characteristic classes, we previously had considered the
+  minimum codimension $r_n$ for which there is an embedding or
+  immersion $\RP^n \to \R^{n + r_n}$.
+
+  What can you say about immersions $\CP^n \to \R^{2n + c_n}$?
+\end{problem}
+
+\begin{problem}\label{bockstein}
+  The map $\RP^\infty \to \CP^\infty$ gives rise to the cohomology operation $H^1(-;\Z/2\Z) \to H^2(-;\Z)$.  Identify this operation with the Bockstein associated to the short exact sequence \[
+    0 \to \Z \to \Z \to \Z/2\Z \to 0.
+  \]
+\end{problem}
+
+\begin{problem}
+Is every complex line bundle over $X$ the result of complexifying a real line bundle?  \textit{Hint:} Use \ref{bockstein}.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
-\begin{problem}
-  Something that may be wrong.
+\begin{problem} % salvage with "orientable"
+  Every compact 3–manifold is parallelizable.
+\end{problem}
+
+\begin{problem} % salvage depending on parity of n
+  The manifold $\CP^n$ admits an orientation reversing diffeomorphism.
 \end{problem}
 
 \end{document}
