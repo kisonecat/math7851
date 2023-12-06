@@ -3,40 +3,67 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\usepackage{tikz}
 
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Art consists of limitation. The most beautiful part of every picture is the frame.
+  \byline{G. K. Chesterton, probably not talking about framed submanifolds.}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+   What is \textbf{framed cobordism}?
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  Referring to theorems from class and your knowledge of homotopy groups, compute $\Omega_1^{\mathrm{fr}}(S^3)$.
 \end{problem}
 
 \section{Exploration}
 
-\begin{problem}
-  Explore something.
+\begin{problem}\label{whitney-graustein}
+  Let $i : S^1 \to \R^2$ be the standard embedding of the
+  circle in the plane, $i(\theta) = \left(\cos \theta, \sin
+    \theta\right)$, and let $j : S^1 \to \R^2$ be the figure eight
+  immersion $$j(\theta) = \left(\cos \theta, \sin (2\theta)\right).$$
+  Can you connect $j$ and $i$ by a smooth family of immersions?
+  %In other words, is there a smooth map $F : S^1 \times I \to \R^2$ so
+  %that each $f_t : S^1 \to \R^2$ given by $f_t(\theta) = F(\theta,t)$
+  %is an immersion and $f_0 \equiv i$ and $f_1 \equiv j$?
+\end{problem}
+
+\begin{problem}As in \ref{whitney-graustein}, again let
+  let $i : S^1 \to \R^2$ be the standard embedding of the
+  circle in the plane, and now let $j : S^1 \to \R^2$ be the immersion
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[line width=2pt]
+      (0,0) .. controls ++(-1,0) and ++(0,0) ..
+      (-1,1) .. controls ++(0,1) and ++(0,0) ..
+      (0,2) .. controls ++(1,0) and ++(0,1) ..
+      (1,0) .. controls ++(0,-2) and ++(-2,0) ..
+      (3,-3) .. controls ++(2,0) and ++(0,0) ..
+      (5,0) .. controls ++(0,1) and ++(1,0) ..
+      (3,2) .. controls ++(-1,0) and ++(0,0) ..
+      (2,0) .. controls ++(0,-1) and ++(-1,0) ..
+      (3,-2) .. controls ++(1,0) and ++(1,0) ..
+      (3,0) .. controls ++(0,0) and ++(0,0) ..
+      (0,0);
+    \end{tikzpicture}
+  \end{center}
+  Can you connect $j$ and $i$ by a smooth family of immersions?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  Every embedding $S^1 \subset M$ admits a framing.
 \end{problem}
 
 \end{document}
