@@ -3,40 +3,64 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\newcommand{\Q}{\mathbb{Q}}
 
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  ``Ida's Hirzebruch signature dish, baked on the occasion of the
+  visit of Fritz Hirzebruch to Edinburgh in September 2010. The bread
+  spelled out the celebrated Hirzebruch signature theorem.''
+  \byline{Andrew Ranicki's homepage}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is a \textbf{multiplicative sequence}?
+\end{problem}
+
+% \begin{problem}
+%   What is the \textbf{Chern character}?
+% \end{problem}
+
+\begin{problem}
+  What is the \textbf{Todd genus}?
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  Calculate $\mathrm{td}(T\CP^2)$, the Todd class of the tangent bundle of $\CP^2$.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Prove a theorem of Zhixu Su, namely that there does not exist a
+  simply-connected manifold $X^{24}$ satisfying
+  $H^\star(X; \Q) = \Q[x]/(x^3)$ with $|x| = 12$.
+
+  \textit{Hint:}
+  \begin{align*}
+    L_6 &= \frac{-1382}{638512875} {p_1}^6 + \frac{12842}{638512875} p_2{p_1}^4 - 
+         \frac{5527}{127702575} {p_2}^2 {p_1}^2 + \frac{2906}{212837625} {p_2}^3 - \\
+        &\phantom{=} \frac{33863}{638512875} p_3 {p_1}^3 + \frac{28967}{212837625} p_3p_2 p_1 - 
+         \frac{40247}{638512875} {p_3}^2 + \frac{40841}{212837625} p_4{p_1}^2 - \\
+        &\phantom{=} \frac{159287}{638512875} p_4 p_2 - \frac{167968}{212837625} p_5 p_1 + 
+         \frac{2828954}{638512875} p_6.
+  \end{align*}  
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  Choose a generator $\alpha$ of $H^\star(\CP^2) = \Z[\alpha]/\alpha^3$
+  with $|\alpha| = 2$.
+
+  For every $x, y \in \Z$ there exists a vector bundle $E$ over
+  $\CP^2$ so that $c_1(E) = x \alpha$ and $c_2(E) = y \alpha^2$.
 \end{problem}
 
 \end{document}
